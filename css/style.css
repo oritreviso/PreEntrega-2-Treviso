@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-style: italic;
+}
+
+body {
+    margin: 10px;
+    height: 100vh;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Alkalami', serif;
+    display: flex;
+    background-color: beige;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 15%;
+}
+
+.container-grid {
+    display: grid;
+
+
+}
+
+.container-grid .mainRecipes {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "mainRecipe-1""mainRecipe-2""mainRecipe-3""mainRecipe-4"
+        "mainRecipe-1""mainRecipe-2""mainRecipe-3""mainRecipe-4"
+        "mainRecipe-1""mainRecipe-2""mainRecipe-3""mainRecipe-4"
+
+    ;
+}
+
+.banner img {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.redesContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.redesContainer .redesLogos {
+    display: flex;
+    justify-content: right;
+
+}
+
+.redesContainer .redesLogos img {
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+}
