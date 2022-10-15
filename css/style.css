@@ -7,4 +7,47 @@
 .containerBody {
     display: grid;
 
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "content"
+        "footer";
+
+    grid-gap: 10px;
+    height: 100vh;
+    padding: 20px;
+}
+
+.containerHeader {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerHeader .headerTop {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.containerHeader .headerBottom {
+    display: flex;
+    justify-content: center;
+}
+
+.containerHeader .headerBottom nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.flexSeparateItems>* {
+    margin-left: 10px;
+}
+
+.containerContent {
+    grid-area: content;
+}
+
+.containerFooter {
+    grid-area: footer;
 }
