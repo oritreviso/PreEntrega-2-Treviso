@@ -5,21 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Subi tu receta</title>
-    <link rel="stylesheet" href="../styless.css" class="rel" />
+    <link rel="stylesheet" href="../css/style.css" class="rel" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="../assets/logo.jpg" type="image/x-icon" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Alkalami&family=Roboto:ital,wght@0,100;0,300;1,100;1,300;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400&display=swap"
       rel="stylesheet"
     />
-    <a href="./index.html" class="ref"></a>
   </head>
   <body>
-    <form action="">
-      <h2>RECETA</h2>
-      <input type="nombre" class="nombre" />
-      <input type="correo" class="correo" />
-      <input type="descripcion" class="descripcion" />
-    </form>
+    <div class="container">
+      <header class="containerHeader mainSectionSpace">
+        <div class="headerTop flexSeparateItems">
+          <div class="logo">logo</div>
+          <nav class="">buscador</nav>
+          <div class="social">redes</div>
+        </div>
+      </header>
+      <main class="contentFormRecipe">
+        <form class="subiTuReceta">
+          <h4>Nombre y Apellido</h4>
+          <div>
+            <h1>Subi Tu Receta</h1>
+            <label for="nombre"></label><input type="text" class="type" />
+          </div>
+          <h4>Mail</h4>
+          <div>
+            <label for="mail"></label><input type="text" class="type" />
+          </div>
+          <h4>Receta</h4>
+          <div>
+            <label for="receta"></label><input type="text" class="type" />
+          </div>
+          <h4>Fotos</h4>
+          <div>
+            <label for="fotos"></label><input type="text" class="type" />
+          </div>
+        </form>
+        <div class="imgReceta">
+          <img src="../assets/InFrame_1666035283689.jpg" alt="" class="src" />
+        </div>
+      </main>
+
+      <footer class="containerFooter mainSectionSpace">
+        <section class="socialMedia flexSeparateItems">
+          <a href=""><img src="../assets/instagram.png" alt="" /></a>
+          <a href=""><img src="../assets/facebook.png" alt="" /></a>
+          <a href=""><img src="../assets/gorjeo.png" alt="" /></a>
+          <a href=""><img src="../assets/whatsapp.png" alt="" /></a>
+        </section>
+      </footer>
+    </div>
   </body>
 </html>
