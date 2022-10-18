@@ -22,30 +22,43 @@
           <nav class="">buscador</nav>
           <div class="social">redes</div>
         </div>
+        <div class="headerBottom">
+          <nav class="menu">
+            <ul class="flexSeparateItems">
+              <li>
+                <a href="./index.html"> Home </a>
+              </li>
+              <li><a href="./blog.html"> Blog </a></li>
+              <li>
+                <a href="./noticias.html"> Noticias </a>
+              </li>
+              <li><a href="./recetas.html"> Recetas </a></li>
+
+              <li>
+                <a class="activeItem" href="./subiTuReceta.html"
+                  >Subi tu receta</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
       <main class="contentFormRecipe">
-        <form class="subiTuReceta">
-          <h4>Nombre y Apellido</h4>
-          <div>
-            <h1>Subi Tu Receta</h1>
-            <label for="nombre"></label><input type="text" class="type" />
-          </div>
-          <h4>Mail</h4>
-          <div>
-            <label for="mail"></label><input type="text" class="type" />
-          </div>
-          <h4>Receta</h4>
-          <div>
-            <label for="receta"></label><input type="text" class="type" />
-          </div>
-          <h4>Fotos</h4>
-          <div>
-            <label for="fotos"></label><input type="text" class="type" />
-          </div>
-        </form>
         <div class="imgReceta">
-          <img src="../assets/InFrame_1666035283689.jpg" alt="" class="src" />
+          <img src="../assets/comidaSubiTuReceta.jpg" alt="" class="src" />
         </div>
+        <form class="subiTuReceta">
+          <h1>Subi Tu Receta</h1>
+
+          <label for="name">Correo electronico:</label>
+          <input type="text" id="name" name="user_name" />
+
+          <label for="mail">Subi tu receta:</label>
+          <input type="email" id="mail" name="user_email" />
+
+          <label for="msg">Subi tus fotos:</label>
+          <textarea id="msg" name="user_message"></textarea>
+        </form>
       </main>
 
       <footer class="containerFooter mainSectionSpace">
