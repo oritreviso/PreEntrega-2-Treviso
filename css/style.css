@@ -304,77 +304,98 @@ h2:hover {
   margin: auto;
 }
 
-.img {
-  width: auto;
-}
-
-.foodImage {
-  margin: 5px;
-  object-fit: fill;
-  width: 25px;
-  height: 25px;
-  margin-top: 60px;
-
-}
-
-.foodImage .img {
-
-  object-fit: fill;
-  width: 100px;
-  height: 100px;
-  margin-top: 60px;
-}
-
-.recipesImg .containerRecipes {
+.containerRecipes .recipesImg {
   display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 25%);
+
 }
+
+.containerRecipes h1 {
+  margin-left: 90px;
+  color: rgb(28, 63, 28);
+  -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+
+}
+
+@-webkit-keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+
+.containerRecipes .recipesImg .foodImage {
+  margin: 5px;
+  margin-top: 5px;
+  margin-right: 5px;
+
+}
+
+.containerRecipes .recipesImg .foodImage img {
+  object-fit: fill;
+  width: 200px;
+  height: 130px;
+  margin-top: 30px;
+
+}
+
 
 @media (max-width: 1200px) {
-
   .containerRecipes {
     width: 1200px;
-
   }
 
-  .recipesImg .containerRecipes {
+  .containerRecipes .recipesImg {
     grid-template-columns: repeat(4, 25%);
-
-
   }
-
 }
-
-
-
 
 @media (max-width: 1024px) {
   .containerRecipes {
     width: 1024px;
   }
 
-  .recipesImg .containerRecipes {
+  .containerRecipe .recipesImg {
     grid-template-columns: repeat(4, 25%);
-
-
   }
-
-
 }
-
 
 @media (max-width: 768px) {
-  .recipesImg .containerRecipes {
-    grid-template-columns: repeat(3, 33.3%);
 
+  .containerRecipes .recipesImg {
+    grid-template-columns: repeat(3, 33.3)
   }
-}
-
-
-@media (max-width: 520px) {
-  .recipesImg .containerRecipes {
-    grid-template-columns: repeat(2, 33.350%);
-
-  }
-
-
-}
