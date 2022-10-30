@@ -1,95 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recetas</title>
-    <link rel="stylesheet" href="../css/style.css" class="rel" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="shortcut icon" href="../assets/logo.jpg" type="image/x-icon" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <header class="containerHeader mainSectionSpace">
-        <div class="headerTop flexSeparateItems">
-          <div class="logo">logo</div>
-          <nav class="">buscador</nav>
-          <div class="social">redes</div>
-        </div>
-        <div class="headerBottom">
-          <nav class="menu">
-            <ul class="flexSeparateItems">
-              <li>
-                <a href="../index.html"> Home </a>
-              </li>
-              <li><a href="./blog.html"> Blog </a></li>
-              <li>
-                <a href="./noticias.html"> Noticias </a>
-              </li>
-              <li><a class="activeItem" href="./recetas.html"> Recetas </a></li>
 
-              <li>
-                <a href="./subiTuReceta.html">Subi tu receta</a>
-              </li>
-            </ul>
-          </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recetas</title>
+  <link rel="stylesheet" href="../css/style.css" class="rel" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="shortcut icon" href="../assets/logo.jpg" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="containerHeader mainSectionSpace">
+      <div class="headerTop flexSeparateItems">
+        <div class="logo"><img src="../assets/logo.jpg" alt="" class="src" width="20px " height="20px "></div>
+        <div class="input-group">
+          <div class="form-outline">
+            <input type="search" id="form1" class="form-control" />
+            <label class="form-label" for="form1"><img src="../assets/buscador.png" alt="" class="rcs" width="20px "
+                height="20px "></label>
+          </div>
+          <button type="button" class="btn btn-primary">
+            <i class="fas fa-search"></i>
+          </button>
         </div>
-      </header>
-      <div class="containerRecipes">
-        <h1>RECETAS DE USTEDES</h1>
-        <section class="recipesImg">
-          <article class="foodImage">
-            <img src="../assets/empanadas.jpg" alt="" class="src" />
-          </article>
-          <article class="foodImage">
-            <img src="../assets/fideos.jpg" alt="" class="src" />
-          </article>
-          <article class="foodImage">
-            <img src="../assets/hamburgues.jpg" alt="" class="src" />
-          </article>
-          <article class="foodImage">
-            <img src="../assets/milas.jpg" alt="" class="src" />
-          </article>
-          <article class="foodImage">
-            <img src="../assets/tamales.jpg" alt="" class="src" />
-          </article>
-          <article class="foodImage">
-            <img src="../assets/papas.jpg" alt="" class="src" />
-          </article>
-          <article class="foodImage">
-            <img src="../assets/ramen.jpg" alt="" class="src" />
-          </article>
-          <article class="foodImage">
-            <img src="../assets/pollo.jpg" alt="" class="src" />
-          </article>
-          <article class="foodImage">
-            <img src="../assets/tarta.jpg" alt="" class="src" />
-          </article>
-          <article class="foodImage">
-            <img src="../assets/tortilla.jpg" alt="" class="src" />
-          </article>
-          <article class="foodImage">
-            <img src="../assets/pizza.jpeg" alt="" class="src" />
-          </article>
-          <article class="foodImage">
-            <img src="../assets/medialunas.jpg" alt="" class="src" />
-          </article>
-        </section>
       </div>
-      <footer class="containerFooter mainSectionSpace">
-        <section class="socialMedia flexSeparateItems">
-          <a href=""><img src="../assets/instagram.png" alt="" /></a>
-          <a href=""><img src="../assets/facebook.png" alt="" /></a>
-          <a href=""><img src="../assets/gorjeo.png" alt="" /></a>
-          <a href=""><img src="../assets/whatsapp.png" alt="" /></a>
-        </section>
-      </footer>
+      <div class="headerBottom">
+        <nav class="menu">
+          <ul class="flexSeparateItems">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/blog.html"> Blog </a></li>
+            <li><a href="../pages/noticias.html"> Noticias </a></li>
+            <li class="activeItem">Recetas</li>
+            <li><a href="../pages/subiTuReceta.html">Subi tu Receta</a></li>
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="containerRecipes">
+      <h1>RECETAS DE USTEDES</h1>
+      <section class="recipesImg">
+        <article class="foodImage">
+          <img src="../assets/empanadas.jpg" alt="" class="src" />
+        </article>
+        <article class="foodImage">
+          <img src="../assets/fideos.jpg" alt="" class="src" />
+        </article>
+        <article class="foodImage">
+          <img src="../assets/hamburgues.jpg" alt="" class="src" />
+        </article>
+        <article class="foodImage">
+          <img src="../assets/milas.jpg" alt="" class="src" />
+        </article>
+        <article class="foodImage">
+          <img src="../assets/tamales.jpg" alt="" class="src" />
+        </article>
+        <article class="foodImage">
+          <img src="../assets/papas.jpg" alt="" class="src" />
+        </article>
+        <article class="foodImage">
+          <img src="../assets/ramen.jpg" alt="" class="src" />
+        </article>
+        <article class="foodImage">
+          <img src="../assets/pollo.jpg" alt="" class="src" />
+        </article>
+        <article class="foodImage">
+          <img src="../assets/tarta.jpg" alt="" class="src" />
+        </article>
+        <article class="foodImage">
+          <img src="../assets/tortilla.jpg" alt="" class="src" />
+        </article>
+        <article class="foodImage">
+          <img src="../assets/pizza.jpeg" alt="" class="src" />
+        </article>
+        <article class="foodImage">
+          <img src="../assets/medialunas.jpg" alt="" class="src" />
+        </article>
+      </section>
     </div>
-  </body>
+    <footer class="containerFooter mainSectionSpace">
+      <section class="socialMedia flexSeparateItems">
+        <a href=""><img src="../assets/instagram.png" alt="" /></a>
+        <a href=""><img src="../assets/facebook.png" alt="" /></a>
+        <a href=""><img src="../assets/gorjeo.png" alt="" /></a>
+        <a href=""><img src="../assets/whatsapp.png" alt="" /></a>
+      </section>
+    </footer>
+  </div>
+</body>
+
 </html>

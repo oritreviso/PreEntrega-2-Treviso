@@ -41,8 +41,6 @@ a:hover {
     "header"
     "content"
     "footer";
-
-  grid-gap: 10px;
   height: 100vh;
 
   background-image: linear-gradient(to right bottom,
@@ -67,6 +65,8 @@ a:hover {
 .containerHeader .headerTop {
   display: flex;
   justify-content: flex-end;
+
+
 }
 
 .containerHeader .headerBottom {
