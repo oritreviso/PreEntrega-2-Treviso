@@ -61,12 +61,14 @@ a:hover {
 @media (max-width: 1024px) {
   .containerRecipes {
     width: 1024px; }
-  .containerRecipe .recipesImg {
-    grid-template-columns: repeat(4, 25%); } }
+    .containerRecipes .recipesImg {
+      grid-template-columns: repeat(3, 33.3%); } }
 
 @media (max-width: 768px) {
-  .containerRecipes .recipesImg {
-    grid-template-columns: repeat(3, 33.3); } }
+  .containerRecipes {
+    width: 768px; }
+    .containerRecipes .recipesImg {
+      grid-template-columns: repeat(2, 50%); } }
 
 @media (max-width: 768px) {
   .contentFormRecipe {
@@ -97,13 +99,27 @@ a:hover {
   .containerHeader .headerBottom {
     display: flex;
     justify-content: center; }
-    .containerHeader .headerBottom nav ul {
+    .containerHeader .headerBottom nav {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+    .containerHeader .headerBottom ul {
       display: flex;
       justify-content: center;
       list-style-type: none;
       margin: 0;
       padding: 0; }
 
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+/* --------------------------------- */
 .containerContent {
   grid-area: content; }
   .containerContent .mainTitle {
