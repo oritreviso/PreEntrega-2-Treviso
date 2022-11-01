@@ -1,0 +1,70 @@
+.containerRecipes {
+  width: 100%;
+  margin: auto;
+
+  h1 {
+    margin-left: 90px;
+    color: $color-h1;
+    -webkit-animation: tracking-in-expand-fwd 0.8s
+      cubic-bezier(0.215, 0.61, 0.355, 1) both;
+    animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1)
+      both;
+  }
+
+  .recipesImg {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 25%);
+
+    .foodImage {
+      margin: 5px;
+      margin-top: 5px;
+      margin-right: 5px;
+
+      img {
+        object-fit: fill;
+        width: 200px;
+        height: 130px;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}

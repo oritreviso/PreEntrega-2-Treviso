@@ -1,0 +1,16 @@
+.containerFooter {
+  grid-area: footer;
+  border-top: 2px solid #a9b7a6;
+  background-color: #ffffff99;
+
+  .socialMedia {
+    display: flex;
+    justify-content: flex-end;
+
+    img {
+      object-fit: cover;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

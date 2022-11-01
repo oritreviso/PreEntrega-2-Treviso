@@ -1,0 +1,23 @@
+.blog {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 60px;
+  padding: 30px;
+  justify-items: center;
+
+  .blogParrafo {
+    font-size: larger;
+    margin-top: 50px;
+  }
+
+  .blogImage {
+    width: 488px;
+    height: 500px;
+    border: 42px solid $borde-recuadro;
+    img {
+      object-fit: cover;
+      width: 405px;
+      height: 420px;
+    }
+  }
+}

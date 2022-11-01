@@ -1,0 +1,27 @@
+.containerHeader {
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff99;
+  border-bottom: 2px solid #a9b7a6;
+  font-weight: 400;
+
+  .headerTop {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .headerBottom {
+    display: flex;
+    justify-content: center;
+    nav {
+      ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}

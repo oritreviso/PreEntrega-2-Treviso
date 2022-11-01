@@ -1,0 +1,69 @@
+.contentFormRecipe {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+  padding: 20px;
+  justify-items: center;
+
+  .imgReceta img {
+    object-fit: cover;
+    width: 405px;
+    height: 420px;
+    margin-top: 60px;
+    border: 42px solid $verde-activeItem;
+  }
+
+  .subiTuReceta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: large;
+    margin-top: 40px;
+
+    h1 {
+      -webkit-animation: tracking-in-expand-fwd 0.8s
+        cubic-bezier(0.215, 0.61, 0.355, 1) both;
+      animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1)
+        both;
+    }
+  }
+}
+
+@-webkit-keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}

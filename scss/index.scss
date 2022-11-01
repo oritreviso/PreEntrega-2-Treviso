@@ -1,0 +1,16 @@
+@import "./base/resets";
+@import "./base/typo";
+@import "./utilities/colors";
+@import "./base/helpers";
+
+@import "./utilities/media-query";
+
+@import "./layout/container";
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/footer";
+
+@import "./pages/subiTuReceta";
+@import "./pages/blog";
+@import "./pages/noticias";
+@import "./pages/recetas";

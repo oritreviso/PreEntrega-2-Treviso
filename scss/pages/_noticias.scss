@@ -1,0 +1,19 @@
+.containerNoticias {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h1 {
+    color: $color-h1;
+  }
+
+  h2 {
+    color: black;
+    text-decoration: none;
+  }
+
+  h2:hover {
+    color: $color-hover;
+  }
+}
