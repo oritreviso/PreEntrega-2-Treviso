@@ -1,0 +1,56 @@
+@media (max-width: 576px) {
+  .containerContent .recipesContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .containerContent {
+    background-color: $color-media;
+  }
+
+  .containerContent .banner img {
+    height: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .searchNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    input {
+      height: 10px;
+    }
+
+    button {
+      padding: 5px;
+      height: 10px;
+      font-size: 7px;
+    }
+  }
+
+  .blog {
+    grid-template-columns: 1fr;
+    background-color: $color-media;
+  }
+
+  .blog .blogParrafo {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 576px) {
+  .containerContent .containerNoticias {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .containerContent.contentFormRecipe {
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+}

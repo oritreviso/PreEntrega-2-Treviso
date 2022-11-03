@@ -1,1 +1,24 @@
+.searchBarWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
+  .searchNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    input {
+      height: 25px;
+      background-color: #eaf5e5;
+    }
+
+    button {
+      color: $borde-recuadro;
+      background-color: $color-media;
+      padding: 5px;
+      height: 25px;
+      font-size: 10px;
+    }
+  }
+}

@@ -3,23 +3,10 @@
   color: $verde-activeItem;
 }
 
-a {
-  color: black;
-  text-decoration: none;
-}
-
-a:hover {
-  color: $link-hover;
-}
-
 .flexSeparateItems > * {
   margin-left: 10px;
 }
 
 .mainSectionSpace {
   padding: 10px;
-}
-
-.hover {
-  color: $link-hover;
 }

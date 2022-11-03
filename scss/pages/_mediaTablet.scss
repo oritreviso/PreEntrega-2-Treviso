@@ -1,0 +1,76 @@
+@media (max-width: 768px) {
+  .containerContent .recipesContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerContent {
+    background-color: $color-media;
+  }
+
+  .containerContent .banner img {
+    height: 150px;
+  }
+  footer {
+    background-color: $color-media;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog {
+    grid-template-columns: 1fr;
+    background-color: $color-media;
+  }
+
+  .blog .blogParrafo {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .containerContent .containerNoticias {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerRecipes {
+    width: auto;
+    .subiTuReceta {
+      h1 {
+        justify-items: center;
+      }
+    }
+    .recipesImg {
+      grid-template-columns: repeat(1, 100%);
+    }
+  }
+}
+@media (max-width: 768px) {
+  .contentFormRecipe {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-gap: 40px;
+    padding: 20px;
+    justify-items: center;
+
+    .imgReceta img {
+      object-fit: cover;
+      width: 405px;
+      height: 420px;
+      margin-top: 60px;
+      border: 42px solid $verde-activeItem;
+    }
+
+    .subiTuReceta {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: large;
+      margin-top: 40px;
+    }
+  }
+}

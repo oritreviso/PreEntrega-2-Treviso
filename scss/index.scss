@@ -3,8 +3,6 @@
 @import "./utilities/colors";
 @import "./base/helpers";
 
-@import "./utilities/media-query";
-
 @import "./layout/container";
 @import "./layout/header";
 @import "./layout/main";
@@ -14,5 +12,8 @@
 @import "./pages/blog";
 @import "./pages/noticias";
 @import "./pages/recetas";
+
+@import "./pages/mediaMobile";
+@import "./pages/mediaTablet";
 
 @import "./components/navbar";

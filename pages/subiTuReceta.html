@@ -6,8 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Subi tu receta</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/index.css" class="rel" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,16 +23,16 @@
   <div class="container">
     <header class="containerHeader mainSectionSpace">
       <div class="headerTop flexSeparateItems">
-        <div class="logo"><img src="../assets/logo.jpg" alt="" class="src" width="30px " height="30px "></div>
         <div class="headerNavbar">
           <nav class="navbar">
-            <div class="containerFluid">
-              <a class="navbar-brand"></a>
+            <div class="searchBarWrapper">
+              <div class="logo">
+                <img src="../assets/logo.jpg" alt="" class="src" width="25px " height="25px ">
+              </div>
               <form class="searchNav" role="search">
                 <input class="form-control me-2" type="search" placeholder="" aria-label="">
                 <button class="btn btn-outline-success" type="submit">Buscador</button>
               </form>
-
             </div>
           </nav>
         </div>
@@ -51,24 +49,25 @@
         </nav>
       </div>
     </header>
-    <main class="contentFormRecipe">
-      <div class="imgReceta">
-        <img src="../assets/comidaSubiTuReceta.jpg" alt="" class="src" />
+    <main class="containerContent">
+      <div class="contentFormRecipe">
+        <div class="imgReceta">
+          <img src="../assets/comidaSubiTuReceta.jpg" alt="" class="src" />
+        </div>
+        <form class="subiTuReceta">
+          <h1>Subi Tu Receta</h1>
+
+          <label for="name">Correo electronico:</label>
+          <input type="text" id="name" name="user_name" />
+
+          <label for="mail">Subi tu receta:</label>
+          <input type="email" id="mail" name="user_email" />
+
+          <label for="msg">Subi tus fotos:</label>
+          <textarea id="msg" name="user_message"></textarea>
+        </form>
       </div>
-      <form class="subiTuReceta">
-        <h1>Subi Tu Receta</h1>
-
-        <label for="name">Correo electronico:</label>
-        <input type="text" id="name" name="user_name" />
-
-        <label for="mail">Subi tu receta:</label>
-        <input type="email" id="mail" name="user_email" />
-
-        <label for="msg">Subi tus fotos:</label>
-        <textarea id="msg" name="user_message"></textarea>
-      </form>
     </main>
-
     <footer class="containerFooter mainSectionSpace">
       <section class="socialMedia flexSeparateItems">
         <a href=""><img src="../assets/instagram.png" alt="" /></a>

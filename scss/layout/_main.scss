@@ -1,4 +1,4 @@
-.containerContent {
+.index {
   grid-area: content;
 
   .mainTitle {
@@ -29,22 +29,5 @@
         height: 200px;
       }
     }
-  }
-}
-
-@media (max-width: 768px) {
-  .containerContent .recipesContainer {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .containerContent {
-    background-color: #c6f2b4;
-  }
-
-  .containerContent .banner img {
-    height: 150px;
   }
 }

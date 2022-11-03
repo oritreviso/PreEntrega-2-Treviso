@@ -6,8 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Noticias</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/index.css" class="rel" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,16 +22,16 @@
   <div class="container">
     <header class="containerHeader mainSectionSpace">
       <div class="headerTop flexSeparateItems">
-        <div class="logo"><img src="../assets/logo.jpg" alt="" class="src" width="30px " height="30px "></div>
         <div class="headerNavbar">
           <nav class="navbar">
-            <div class="containerFluid">
-              <a class="navbar-brand"></a>
+            <div class="searchBarWrapper">
+              <div class="logo">
+                <img src="../assets/logo.jpg" alt="" class="src" width="25px " height="25px ">
+              </div>
               <form class="searchNav" role="search">
                 <input class="form-control me-2" type="search" placeholder="" aria-label="">
                 <button class="btn btn-outline-success" type="submit">Buscador</button>
               </form>
-
             </div>
           </nav>
         </div>
@@ -50,72 +48,74 @@
         </nav>
       </div>
     </header>
-    <main class="containerNoticias">
-      <div class="noticia-1">
-        <h1>Novedades sobre alimentacion</h1>
-        <h2>Todo sobre la vitamina C</h2>
-        <p>
-          Es extensa la lista de nutrientes que se pueden encontrar en
-          aquellos alimentos catalogados como beneficiosos para el organismo.
-          Sin embargo, hay uno en particular que es el jugador estrella y cuya
-          ingesta es casi un imperativo para todas las personas. Se trata de
-          la vitamina C, una de las grandes aliadas del cuerpo humano ya que
-          funciona como antioxidante. Protege a las células de los efectos de
-          los radicales libres, es decir, “de las moléculas nocivas que se
-          producen cuando el cuerpo descompone alimentos o se expone al humo
-          del tabaco y la radiación del sol, rayos X u otras fuentes”,
-          explican desde la Mayo Clinic.
-        </p>
-      </div>
-      <div class="noticia-2">
-        <h2>Chau tostadas y jugo para el desayuno</h2>
-        <p>
-          Tostadas con mermelada, café con leche y un jugo de naranja. Este
-          “clásico” suele ser para muchos el desayuno perfecto de cada mañana,
-          pero no es tan saludable como se piensa. De acuerdo con los
-          profesionales que se dedican a la nutrición y alimentación
-          saludable, esta combinación como desayuno de todos los días puede
-          desencadenar problemas de salud. “El desayuno representa
-          aproximadamente entre el 20 y 25 % de los requerimientos
-          nutricionales diarios, mejorando el rendimiento cognitivo, el estado
-          físico, la saciedad y el estado de ánimo posterior. Este se suele
-          componer principalmente por una infusión (café, té o mate), pan y
-          galletitas, y dulces, siendo estos de baja calidad nutricional. Se
-          trata de alimentos ricos en azúcares y grasas saturadas, que se
-          alejan de las recomendaciones generales ya que predisponen al
-          aumento de peso y a factores de riesgo cardiometabólicos”, destaca
-          la Lic. en Nutrición, Anabella Famiglietti (M.N.9436).
-        </p>
-      </div>
-      <div class="noticia-3">
-        <h2>Cenar tarde perjudica la salud?</h2>
-        <p>
-          Cenar después de las 10 de la noche aumenta el riesgo de desarrollar
-          obesidad. Así lo señala un nuevo estudio de investigadores de la
-          Universidad de Harvard publicado en la revista científica Cell
-          Metabolism. Los científicos relacionaron el hecho de comer tarde con
-          una desaceleración del metabolismo en las horas posteriores a la
-          cena y evidenciaron un aumento del hambre durante la mañana
-          siguiente. Participaron en el estudio 16 voluntarios con sobrepeso u
-          obesidad de entre 20 y 60 años. Se dividieron en dos grupos: los que
-          necesitaban hacer su última refección del día a las seis de la tarde
-          y los que tenían que cenar a las 10 de la noche. Ambos ingirieron la
-          misma comida ofrecida por los investigadores.
-        </p>
-      </div>
-      <div class="noticia-4">
-        <h2>Potasio todos los dias?</h2>
-        <p>
-          Es usual recurrir al consumo de una banana con la intención de
-          combatir calambres, así como también se suele ver a deportistas
-          ingerir una cuando terminan de jugar un partido o de entrenar. En el
-          último tiempo, las recetas saludables a base de esta fruta se
-          volvieron furor en las redes sociales al haber sido adoptadas por
-          influencers, cocineros y celebridades como parte de sus rutinas
-          culinarias, quienes comparten con sus seguidores el paso a paso de
-          sus creaciones que suelen ser en forma de pancakes o budines,
-          catalogados como “fit”.
-        </p>
+    <main class="containerContent">
+      <div class="containerNoticias">
+        <div class="noticia-1">
+          <h1>Novedades sobre alimentacion</h1>
+          <h2>Todo sobre la vitamina C</h2>
+          <p>
+            Es extensa la lista de nutrientes que se pueden encontrar en
+            aquellos alimentos catalogados como beneficiosos para el organismo.
+            Sin embargo, hay uno en particular que es el jugador estrella y cuya
+            ingesta es casi un imperativo para todas las personas. Se trata de
+            la vitamina C, una de las grandes aliadas del cuerpo humano ya que
+            funciona como antioxidante. Protege a las células de los efectos de
+            los radicales libres, es decir, “de las moléculas nocivas que se
+            producen cuando el cuerpo descompone alimentos o se expone al humo
+            del tabaco y la radiación del sol, rayos X u otras fuentes”,
+            explican desde la Mayo Clinic.
+          </p>
+        </div>
+        <div class="noticia-2">
+          <h2>Chau tostadas y jugo para el desayuno</h2>
+          <p>
+            Tostadas con mermelada, café con leche y un jugo de naranja. Este
+            “clásico” suele ser para muchos el desayuno perfecto de cada mañana,
+            pero no es tan saludable como se piensa. De acuerdo con los
+            profesionales que se dedican a la nutrición y alimentación
+            saludable, esta combinación como desayuno de todos los días puede
+            desencadenar problemas de salud. “El desayuno representa
+            aproximadamente entre el 20 y 25 % de los requerimientos
+            nutricionales diarios, mejorando el rendimiento cognitivo, el estado
+            físico, la saciedad y el estado de ánimo posterior. Este se suele
+            componer principalmente por una infusión (café, té o mate), pan y
+            galletitas, y dulces, siendo estos de baja calidad nutricional. Se
+            trata de alimentos ricos en azúcares y grasas saturadas, que se
+            alejan de las recomendaciones generales ya que predisponen al
+            aumento de peso y a factores de riesgo cardiometabólicos”, destaca
+            la Lic. en Nutrición, Anabella Famiglietti (M.N.9436).
+          </p>
+        </div>
+        <div class="noticia-3">
+          <h2>Cenar tarde perjudica la salud?</h2>
+          <p>
+            Cenar después de las 10 de la noche aumenta el riesgo de desarrollar
+            obesidad. Así lo señala un nuevo estudio de investigadores de la
+            Universidad de Harvard publicado en la revista científica Cell
+            Metabolism. Los científicos relacionaron el hecho de comer tarde con
+            una desaceleración del metabolismo en las horas posteriores a la
+            cena y evidenciaron un aumento del hambre durante la mañana
+            siguiente. Participaron en el estudio 16 voluntarios con sobrepeso u
+            obesidad de entre 20 y 60 años. Se dividieron en dos grupos: los que
+            necesitaban hacer su última refección del día a las seis de la tarde
+            y los que tenían que cenar a las 10 de la noche. Ambos ingirieron la
+            misma comida ofrecida por los investigadores.
+          </p>
+        </div>
+        <div class="noticia-4">
+          <h2>Potasio todos los dias?</h2>
+          <p>
+            Es usual recurrir al consumo de una banana con la intención de
+            combatir calambres, así como también se suele ver a deportistas
+            ingerir una cuando terminan de jugar un partido o de entrenar. En el
+            último tiempo, las recetas saludables a base de esta fruta se
+            volvieron furor en las redes sociales al haber sido adoptadas por
+            influencers, cocineros y celebridades como parte de sus rutinas
+            culinarias, quienes comparten con sus seguidores el paso a paso de
+            sus creaciones que suelen ser en forma de pancakes o budines,
+            catalogados como “fit”.
+          </p>
+        </div>
       </div>
     </main>
     <footer class="containerFooter mainSectionSpace">
