@@ -5,23 +5,38 @@
   padding: 20px;
   justify-items: center;
 
-  .imgReceta img {
-    object-fit: cover;
-    width: 405px;
-    height: 420px;
-    margin-top: 60px;
-    border: 42px solid $verde-activeItem;
-  }
+  .imgReceta {
+    display: grid;
+    justify-content: center;
 
+    img {
+      object-fit: cover;
+      width: 405px;
+      height: 420px;
+      margin-top: 60px;
+      border: 42px solid $verde-activeItem;
+    }
+  }
   .subiTuReceta {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: flex-start;
     font-size: large;
     margin-top: 40px;
 
+    .contactForm {
+      label {
+        margin-bottom: 0%;
+        color: $verde-activeItem;
+      }
+      input {
+        font-size: 8px;
+        padding: 12px;
+      }
+    }
+
     h1 {
+      padding-bottom: 30px;
       -webkit-animation: tracking-in-expand-fwd 0.8s
         cubic-bezier(0.215, 0.61, 0.355, 1) both;
       animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1)

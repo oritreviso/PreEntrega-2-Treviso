@@ -3,11 +3,14 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 60px;
   padding: 30px;
-  justify-items: center;
+  padding-top: 60px;
 
   .blogParrafo {
-    font-size: larger;
-    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    margin-top: 5px;
+    text-align: justify;
   }
 
   .blogImage {

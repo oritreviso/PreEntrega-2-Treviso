@@ -1,11 +1,12 @@
 .containerNoticias {
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  padding: 15px 50px;
+  font-size: smaller;
 
   h1 {
+    display: flex;
+    justify-content: center;
     color: $color-h1;
+    padding-bottom: 20rm;
   }
 
   h2 {
@@ -15,5 +16,40 @@
 
   h2:hover {
     color: $color-hover;
+  }
+
+  .containerNoticiasUp {
+    display: flex;
+    flex-direction: column;
+    .noticia-1 {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 30px;
+    }
+    .noticia-2 {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 30px;
+    }
+  }
+
+  .containerNoticiasDown {
+    display: flex;
+    flex-direction: row;
+
+    .noticia-3 {
+      display: flex;
+      flex-direction: row;
+      margin-right: 15px;
+    }
+    .noticia-4 {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  p {
+    max-width: 96%;
+    text-align: justify;
   }
 }

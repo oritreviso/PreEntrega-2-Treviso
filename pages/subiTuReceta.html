@@ -6,10 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Subi tu receta</title>
+
   <link rel="stylesheet" href="../css/index.css" class="rel" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="shortcut icon" href="../assets/logo.jpg" type="image/x-icon" />
+  <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400&display=swap" rel="stylesheet" />
   <meta propiedad="og:título" contenido="blog personal, recetas de comidas">
   <meta propiedad="og:nombre_del_sitio" contenido="QUE COMEMOS HOY ?">
@@ -23,30 +24,26 @@
   <div class="container">
     <header class="containerHeader mainSectionSpace">
       <div class="headerTop flexSeparateItems">
+        <div class="headerLogo">
+          <img src="../assets/logo.png" alt="" class="src" width="100px " height="100px ">
+        </div>
         <div class="headerNavbar">
-          <nav class="navbar">
-            <div class="searchBarWrapper">
-              <div class="logo">
-                <img src="../assets/logo.jpg" alt="" class="src" width="25px " height="25px ">
-              </div>
-              <form class="searchNav" role="search">
-                <input class="form-control me-2" type="search" placeholder="" aria-label="">
-                <button class="btn btn-outline-success" type="submit">Buscador</button>
-              </form>
-            </div>
+          <nav class="menu">
+            <ul class="flexSeparateItems">
+              <li><a href="../index.html"> Home </a></li>
+              <li><a href="../pages/blog.html"> Blog </a></li>
+              <li><a href="../pages/noticias.html"> Noticias </a></li>
+              <li><a href="../pages/recetas.html">Recetas</a></li>
+              <li class="activeItem">Subi tu Receta </li>
+            </ul>
           </nav>
         </div>
-      </div>
-      <div class="headerBottom">
-        <nav class="menu">
-          <ul class="flexSeparateItems">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../pages/blog.html"> Blog </a></li>
-            <li><a href="../pages/noticias.html"> Noticias </a></li>
-            <li><a href="../pages/recetas.html"> Recetas </a></li>
-            <li class="activeItem"> Subi tu Receta</li>
-          </ul>
-        </nav>
+        <div class="headerBottom">
+          <form class="searchNav" role="search">
+            <button class="buttonNavbar" type="submit">Buscador</button>
+            <input class="form-control me-2" type="search" placeholder="" aria-label="">
+          </form>
+        </div>
       </div>
     </header>
     <main class="containerContent">
@@ -56,15 +53,21 @@
         </div>
         <form class="subiTuReceta">
           <h1>Subi Tu Receta</h1>
+          <form action="contactForm">
+            <label for="nombre">Correo-email</label>
+            <input type="inputNombre" name="nombre" id="nombre" autocomplete="name" required>
 
-          <label for="name">Correo electronico:</label>
-          <input type="text" id="name" name="user_name" />
+            <label for="correo">Nombre de tu receta</label>
+            <input type="email" name="correo" id="correo" autocomplete="email" required>
 
-          <label for="mail">Subi tu receta:</label>
-          <input type="email" id="mail" name="user_email" />
+            <label for="Subi tu receta paso a paso">Paso a paso</label>
+            <input type="text" name="pais" id="pais" autocomplete="country" required>
 
-          <label for="msg">Subi tus fotos:</label>
-          <textarea id="msg" name="user_message"></textarea>
+            <label for="fotos">Subi tus fotos</label>
+            <input type="text" name="cp" id="cp" autocomplete="postal-code" required>
+
+            <input type="submit">
+          </form>
         </form>
       </div>
     </main>

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../css/index.css" class="real" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="shortcut icon" href="../assets/logo.jpg" type="image/x-icon" />
+  <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400&display=swap" rel="stylesheet" />
   <meta propiedad="og:título" contenido="blog personal, recetas de comidas">
   <meta propiedad="og:nombre_del_sitio" contenido="QUE COMEMOS HOY ?">
@@ -24,30 +24,26 @@
   <div class="container">
     <header class="containerHeader mainSectionSpace">
       <div class="headerTop flexSeparateItems">
+        <div class="headerLogo">
+          <img src="../assets/logo.png" alt="" class="src" width="100px " height="100px ">
+        </div>
         <div class="headerNavbar">
-          <nav class="navbar">
-            <div class="searchBarWrapper">
-              <div class="logo">
-                <img src="../assets/logo.jpg" alt="" class="src" width="25px " height="25px ">
-              </div>
-              <form class="searchNav" role="search">
-                <input class="form-control me-2" type="search" placeholder="" aria-label="">
-                <button class="btn btn-outline-success" type="submit">Buscador</button>
-              </form>
-            </div>
+          <nav class="menu">
+            <ul class="flexSeparateItems">
+              <li><a href="../index.html"> Home </a></li>
+              <li class="activeItem"> Blog</li>
+              <li><a href="../pages/noticias.html"> Noticias </a></li>
+              <li><a href="../pages/recetas.html"> Recetas </a></li>
+              <li><a href="../pages/subiTuReceta.html">Subi tu Receta</a></li>
+            </ul>
           </nav>
         </div>
-      </div>
-      <div class="headerBottom">
-        <nav class="menu">
-          <ul class="flexSeparateItems">
-            <li><a href="../index.html">Home</a></li>
-            <li class="activeItem">Blog </li>
-            <li><a href="../pages/noticias.html"> Noticias </a></li>
-            <li><a href="../pages/recetas.html"> Recetas </a></li>
-            <li><a href="../pages/subiTuReceta.html">Subi tu Receta</a></li>
-          </ul>
-        </nav>
+        <div class="headerBottom">
+          <form class="searchNav" role="search">
+            <button class="buttonNavbar" type="submit">Buscador</button>
+            <input class="form-control me-2" type="search" placeholder="" aria-label="">
+          </form>
+        </div>
       </div>
     </header>
     <main class="containerContent">
@@ -63,6 +59,10 @@
           de comer hoy por dios? Entonces cuando inicie mi curso de diseño Web
           decidi crear esta pagina,ahora que esta creada..nos ayudamos entre
           todos??
+          La idea es simple...cada vez que pensemos en que comer o que creamos que una receta puede ayudar a otro, la
+          publicamos, subimos fotos y el paso a paso, en la seccion Subi Tu receta encontraras todos los pasos para
+          poder hacerlo.Dale!!! animate !! esperamos tu receta.
+
         </p>
         <div class="blogImage">
           <img src="../assets/blogImg.webp" alt="" class="src" />

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../css/index.css" class="rel" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="shortcut icon" href="../assets/logo.jpg" type="image/x-icon" />
+  <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400&display=swap" rel="stylesheet" />
   <meta propiedad="og:título" contenido="blog personal, recetas de comidas">
   <meta propiedad="og:nombre_del_sitio" contenido="QUE COMEMOS HOY ?">
@@ -23,73 +23,94 @@
   <div class="container">
     <header class="containerHeader mainSectionSpace">
       <div class="headerTop flexSeparateItems">
+        <div class="headerLogo">
+          <img src="../assets/logo.png" alt="" class="src" width="100px " height="100px ">
+        </div>
         <div class="headerNavbar">
-          <nav class="navbar">
-            <div class="searchBarWrapper">
-              <div class="logo">
-                <img src="../assets/logo.jpg" alt="" class="src" width="25px " height="25px ">
-              </div>
-              <form class="searchNav" role="search">
-                <input class="form-control me-2" type="search" placeholder="" aria-label="">
-                <button class="btn btn-outline-success" type="submit">Buscador</button>
-              </form>
-            </div>
+          <nav class="menu">
+            <ul class="flexSeparateItems">
+              <li class="activeItem"> Home</li>
+              <li><a href="../pages/blog.html"> Blog </a></li>
+              <li><a href="../pages/noticias.html"> Noticias </a></li>
+              <li><a href="../pages/recetas.html"> Recetas </a></li>
+              <li><a href="../pages/subiTuReceta.html">Subi tu Receta</a></li>
+            </ul>
           </nav>
         </div>
-      </div>
-      <div class="headerBottom">
-        <nav class="menu">
-          <ul class="flexSeparateItems">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../pages/blog.html"> Blog </a></li>
-            <li><a href="../pages/noticias.html"> Noticias </a></li>
-            <li class="activeItem">Recetas</li>
-            <li><a href="../pages/subiTuReceta.html">Subi tu Receta</a></li>
-
-          </ul>
-        </nav>
+        <div class="headerBottom">
+          <form class="searchNav" role="search">
+            <button class="buttonNavbar" type="submit">Buscador</button>
+            <input class="form-control me-2" type="search" placeholder="" aria-label="">
+          </form>
+        </div>
       </div>
     </header>
     <main class="containerContent">
       <div class="containerRecipes">
-        <h1>RECETAS DE USTEDES</h1>
+        <h1>Recetario solidario</h1>
         <section class="recipesImg">
+
           <article class="foodImage">
             <img src="../assets/empanadas.jpg" alt="" class="src" />
+            <h3>Empanadas criollas</h3>
+            <p>En la descripcion les voy a mostrar el paso a paso..</p>
+            <a href="" class="href">Ver mas</a>
           </article>
           <article class="foodImage">
             <img src="../assets/fideos.jpg" alt="" class="src" />
-          </article>
-          <article class="foodImage">
-            <img src="../assets/hamburgues.jpg" alt="" class="src" />
+            <h3>Fideos con verdura</h3>
+            <p>Paso 1- poner los vegetales en la sarten</p>
+            <a href="" class="href">Ver mas</a>
           </article>
           <article class="foodImage">
             <img src="../assets/milas.jpg" alt="" class="src" />
+            <h3>Milanesas de la abuela</h3>
+            <p>El secreto para que te salgan sequitas..</p>
+            <a href="" class="href">Ver mas</a>
           </article>
           <article class="foodImage">
             <img src="../assets/tamales.jpg" alt="" class="src" />
+            <h3>Tamales Tucumanos</h3>
+            <p>Esta receta paso de genaracion en genaracion ..</p>
+            <a href="" class="href">Ver mas</a>
           </article>
           <article class="foodImage">
             <img src="../assets/papas.jpg" alt="" class="src" />
+            <h3>Fideos con tuco</h3>
+            <p>Lo primero que tenes que hacer es ir al super.. ..</p>
+            <a href="" class="href">Ver mas</a>
           </article>
           <article class="foodImage">
             <img src="../assets/ramen.jpg" alt="" class="src" />
+            <h3>Ramen</h3>
+            <p>Primero poner a hervir los fideos de arroz.</p>
+            <a href="" class="href">Ver mas</a>
           </article>
           <article class="foodImage">
             <img src="../assets/pollo.jpg" alt="" class="src" />
-          </article>
-          <article class="foodImage">
-            <img src="../assets/tarta.jpg" alt="" class="src" />
+            <h3>Pollo al horno</h3>
+            <p>Pedile a tu carnicero amigo un buen pollo de campo y leete esta receta..</p>
+            <a href="" class="href">Ver mas</a>
           </article>
           <article class="foodImage">
             <img src="../assets/tortilla.jpg" alt="" class="src" />
+            <h3>Tortilla española</h3>
+            <p>comprar papas, freirlas,..</p>
+            <a href="" class="href">Ver mas</a>
           </article>
           <article class="foodImage">
             <img src="../assets/pizza.jpeg" alt="" class="src" />
+            <h3>Pizza al horno de barro</h3>
+            <p>esta es la mejor receta de masa de pizza del mundo,anota!!..</p>
+            <a href="" class="href">Ver mas</a>
           </article>
           <article class="foodImage">
             <img src="../assets/medialunas.jpg" alt="" class="src" />
+            <h3>Medialunas caseras</h3>
+            <p>Primero, mezclar levadura, harina, manteca..</p>
+            <a href="" class="href">Ver mas</a>
           </article>
+
         </section>
       </div>
     </main>

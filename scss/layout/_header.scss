@@ -1,42 +1,52 @@
 .containerHeader {
+  display: grid;
   grid-area: header;
-  display: flex;
-  flex-direction: column;
   background-color: #ffffff99;
   border-bottom: 2px solid #a9b7a6;
   font-weight: 400;
 
   .headerTop {
     display: flex;
-    justify-content: flex-end;
-  }
-  .headerBottom {
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 
-    nav {
-      display: flex;
-      justify-content: center;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
+    .headerLogo {
+      img {
+        width: 70px;
+        height: 70px;
+      }
     }
-    ul {
-      display: flex;
-      justify-content: center;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
+
+    .headerNavbar {
+      nav {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .headerBottom {
+      .searchNav .buttonNavbar {
+        width: 100px;
+        border-radius: 50px;
+        color: $verde-activeItem;
+        background-color: $color-media;
+      }
+
+      .searchNav input {
+        border-radius: 20px;
+        color: $verde-activeItem;
+      }
     }
   }
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 /* --------------------------------- */

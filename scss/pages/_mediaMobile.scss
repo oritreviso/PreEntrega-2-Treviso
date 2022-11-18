@@ -49,8 +49,10 @@
 }
 
 @media (max-width: 576px) {
-  .containerContent.contentFormRecipe {
-    display: grid;
-    grid-template-rows: 1fr;
+  .containerContent {
+    .contentFormRecipe {
+      display: grid;
+      grid-template-columns: repeat(1, 100%);
+    }
   }
 }
