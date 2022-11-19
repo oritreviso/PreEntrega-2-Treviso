@@ -1,6 +1,8 @@
-* {
+body {
   margin: 0;
-  padding: 0;
+  padding: 0; }
+
+* {
   box-sizing: border-box; }
 
 a {
@@ -26,13 +28,27 @@ body {
 .mainSectionSpace {
   padding: 10px; }
 
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px; }
+  .inputWrapper input {
+    height: 30px;
+    border-radius: 10px; }
+
 .container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
-  grid-template-areas: "header" "content" "footer";
+  grid-template-areas: "header" "content" "footer";
   height: 100vh;
   background-image: linear-gradient(to right bottom, #aff1da, #b6f3c8, #c6f2b4, #deef9f, #f9ea8f); }
+  .container .containerContent {
+    padding-bottom: 20px; }
+    .container .containerContent h1 {
+      text-align: center;
+      -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+      animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
 
 .containerHeader {
   display: grid;
@@ -70,8 +86,7 @@ body {
 
 /* --------------------------------- */
 .index .banner h1 {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   color: #174343;
   font-family: fantasy;
   font-size: xx-large;
@@ -79,8 +94,7 @@ body {
   padding: 8px; }
 
 .index .banner h2 {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   color: #174343;
   font-size: x-large;
   font-weight: 800;
@@ -102,13 +116,12 @@ body {
   margin: auto; }
   .containerCards .card {
     width: 300px;
-    height: 350px;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(205, 104, 104, 0.2);
     overflow: hidden;
     margin: 20px;
     text-align: center;
-    transition: all 0, 25s; }
+    padding-bottom: 10px; }
     .containerCards .card img {
       width: 330px;
       height: 220px; }
@@ -137,37 +150,27 @@ body {
       width: 30px;
       height: 30px; }
 
-.contentFormRecipe {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 40px;
-  padding: 20px;
-  justify-items: center; }
-  .contentFormRecipe .imgReceta {
-    display: grid;
-    justify-content: center; }
-    .contentFormRecipe .imgReceta img {
+.containerContent .contentFormRecipe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .containerContent .contentFormRecipe .imgReceta {
+    margin-right: 80px; }
+    .containerContent .contentFormRecipe .imgReceta img {
       object-fit: cover;
       width: 405px;
       height: 420px;
       margin-top: 60px;
       border: 42px solid #135637; }
-  .contentFormRecipe .subiTuReceta {
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: flex-start;
+  .containerContent .contentFormRecipe .subiTuReceta {
+    display: flex;
+    flex-direction: column;
     font-size: large;
     margin-top: 40px; }
-    .contentFormRecipe .subiTuReceta .contactForm label {
-      margin-bottom: 0%;
-      color: #135637; }
-    .contentFormRecipe .subiTuReceta .contactForm input {
-      font-size: 8px;
-      padding: 12px; }
-    .contentFormRecipe .subiTuReceta h1 {
-      padding-bottom: 30px;
-      -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-      animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
+    .containerContent .contentFormRecipe .subiTuReceta form {
+      width: 350px; }
+    .containerContent .contentFormRecipe .subiTuReceta button {
+      width: 100%; }
 
 @-webkit-keyframes tracking-in-expand-fwd {
   0% {
@@ -198,23 +201,20 @@ body {
 .blog {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 60px;
-  padding: 30px;
-  padding-top: 60px; }
-  .blog .blogParrafo {
-    display: flex;
-    justify-content: center;
-    font-size: medium;
-    margin-top: 5px;
-    text-align: justify; }
+  grid-gap: 60px; }
   .blog .blogImage {
-    width: 488px;
-    height: 500px;
-    border: 42px solid #1d3917; }
+    display: flex;
+    justify-content: flex-end; }
     .blog .blogImage img {
+      border: 42px solid #1d3917;
       object-fit: cover;
       width: 405px;
       height: 420px; }
+  .blog .blogParrafo p {
+    width: 405px;
+    font-size: medium;
+    margin-top: 5px;
+    text-align: justify; }
 
 .containerNoticias {
   padding: 15px 50px;
@@ -279,8 +279,7 @@ body {
       box-shadow: 0 2px 2px rgba(205, 104, 104, 0.2);
       overflow: hidden;
       margin: 20px;
-      text-align: center;
-      transition: all 0, 25s; }
+      text-align: center; }
       .containerRecipes .recipesImg .foodImage img {
         width: 200px;
         height: 100px; }
@@ -323,6 +322,33 @@ body {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     opacity: 1; } }
+
+.searchBarWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .searchBarWrapper .searchNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .searchBarWrapper .searchNav input {
+      height: 25px;
+      background-color: #eaf5e5; }
+
+.button-basic, .button-search, .button-submit {
+  border-radius: 20px;
+  padding: 2px 10px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer; }
+
+.button-search {
+  color: #1d3917;
+  background-color: #b9f1c9; }
+
+.button-submit {
+  color: #ffff;
+  background-color: #ababa7; }
 
 @media (max-width: 576px) {
   .containerContent .recipesContainer {
@@ -378,11 +404,9 @@ body {
   .containerContent {
     background-color: #b9f1c9; }
   .containerContent .index .banner h1 {
-    display: flex;
-    justify-content: center; }
+    text-align: center; }
   .containerContent .index .banner h2 {
-    display: flex;
-    justify-content: center; }
+    text-align: center; }
   .containerContent .index .containerCards {
     display: flex;
     flex-direction: row;
@@ -392,24 +416,19 @@ body {
 
 @media (max-width: 768px) {
   .blog {
-    padding: auto;
-    padding-top: 0%;
-    display: flex;
-    flex-direction: column;
-    background-color: #b9f1c9; }
-    .blog .blog .blogParrafo {
+    grid-gap: 0;
+    grid-template-columns: repeat(1, 100%); }
+    .blog .blogParrafo {
       margin-top: 0px;
       display: flex;
       justify-content: center; }
     .blog .blogImage {
-      height: 500px;
-      width: 0%;
-      border: none; } }
+      justify-content: center; } }
 
 @media (max-width: 768px) {
   .containerContent .containerNoticias {
     font-size: x-small;
-    padding: 5%; }
+    padding: 30px; }
     .containerContent .containerNoticias .containerNoticiasUp .noticia-1 img {
       height: 100px; }
     .containerContent .containerNoticias .containerNoticiasUp .noticia-2 img {
@@ -417,8 +436,11 @@ body {
     .containerContent .containerNoticias .containerNoticiasDown {
       display: flex;
       flex-direction: column; }
-      .containerContent .containerNoticias .containerNoticiasDown .noticia-3 img {
-        height: 100px; }
+      .containerContent .containerNoticias .containerNoticiasDown .noticia-3 {
+        margin-right: 0;
+        margin-bottom: 15px; }
+        .containerContent .containerNoticias .containerNoticiasDown .noticia-3 img {
+          height: 100px; }
       .containerContent .containerNoticias .containerNoticiasDown .noticia-4 img {
         height: 100px;
         align-content: center; } }
@@ -432,25 +454,16 @@ body {
       grid-template-columns: repeat(1, 100%); } }
 
 @media (max-width: 768px) {
+  .containerContent .contentFormRecipe .imgReceta {
+    margin-right: 0px;
+    display: flex;
+    justify-content: center; }
+  .containerContent .contentFormRecipe .subiTuReceta {
+    justify-content: center;
+    flex-direction: row; } }
+
+@media (max-width: 768px) {
   .containerContent .contentFormRecipe {
     padding: inherit;
     display: grid;
     grid-template-columns: repeat(1, 100%); } }
-
-.searchBarWrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-  .searchBarWrapper .searchNav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
-    .searchBarWrapper .searchNav input {
-      height: 25px;
-      background-color: #eaf5e5; }
-    .searchBarWrapper .searchNav button {
-      color: #1d3917;
-      background-color: #b9f1c9;
-      padding: 5px;
-      height: 25px;
-      font-size: 10px; }

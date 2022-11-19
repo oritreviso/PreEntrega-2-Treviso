@@ -19,32 +19,27 @@
   }
 
   .containerNoticiasUp {
-    display: flex;
-    flex-direction: column;
+    @include flexColum;
+
     .noticia-1 {
-      display: flex;
-      flex-direction: row;
+      @include flexRow;
       margin-bottom: 30px;
     }
     .noticia-2 {
-      display: flex;
-      flex-direction: row;
+      @include flexRow;
       margin-bottom: 30px;
     }
   }
 
   .containerNoticiasDown {
-    display: flex;
-    flex-direction: row;
+    @include flexRow;
 
     .noticia-3 {
-      display: flex;
-      flex-direction: row;
+      @include flexRow;
       margin-right: 15px;
     }
     .noticia-4 {
-      display: flex;
-      flex-direction: row;
+      @include flexRow;
     }
   }
 

@@ -26,17 +26,14 @@
     .index {
       .banner {
         h1 {
-          display: flex;
-          justify-content: center;
+          text-align: center;
         }
         h2 {
-          display: flex;
-          justify-content: center;
+          text-align: center;
         }
       }
       .containerCards {
-        display: flex;
-        flex-direction: row;
+        @include flexRow;
         height: 0%;
       }
     }
@@ -49,29 +46,26 @@
 
 @media (max-width: 768px) {
   .blog {
-    padding: auto;
-    padding-top: 0%;
-    display: flex;
-    flex-direction: column;
-    background-color: $color-media;
+    grid-gap: 0;
+    grid-template-columns: repeat(1, 100%);
 
-    .blog .blogParrafo {
+    .blogParrafo {
       margin-top: 0px;
       display: flex;
       justify-content: center;
     }
+
     .blogImage {
-      height: 500px;
-      width: 0%;
-      border: none;
+      justify-content: center;
     }
   }
 }
+
 @media (max-width: 768px) {
   .containerContent {
     .containerNoticias {
       font-size: x-small;
-      padding: 5%;
+      padding: 30px;
       .containerNoticiasUp {
         .noticia-1 {
           img {
@@ -88,6 +82,9 @@
         display: flex;
         flex-direction: column;
         .noticia-3 {
+          margin-right: 0;
+          margin-bottom: 15px;
+
           img {
             height: 100px;
           }
@@ -117,6 +114,24 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .containerContent {
+    .contentFormRecipe {
+      .imgReceta {
+        margin-right: 0px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .subiTuReceta {
+        justify-content: center;
+        flex-direction: row;
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .containerContent {
     .contentFormRecipe {

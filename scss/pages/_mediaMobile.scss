@@ -17,8 +17,7 @@
 
 @media (max-width: 576px) {
   .searchNav {
-    display: flex;
-    flex-direction: row;
+    @include flexRow;
     justify-content: center;
 
     input {

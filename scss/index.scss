@@ -2,6 +2,7 @@
 @import "./base/resets";
 @import "./base/typo";
 @import "./base/helpers";
+@import "./base/mixins";
 
 @import "./layout/container";
 @import "./layout/header";
@@ -13,7 +14,8 @@
 @import "./pages/noticias";
 @import "./pages/recetas";
 
+@import "./components/navbar";
+@import "./components/button";
+
 @import "./pages/mediaMobile";
 @import "./pages/mediaTablet";
-
-@import "./components/navbar";

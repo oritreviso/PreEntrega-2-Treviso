@@ -1,85 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subi tu receta</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Subi tu receta</title>
+    <link rel="stylesheet" href="../css/index.css" class="rel" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400&display=swap"
+      rel="stylesheet"
+    />
+    <meta propiedad="og:título" contenido="blog personal, recetas de comidas" />
+    <meta propiedad="og:nombre_del_sitio" contenido="QUE COMEMOS HOY ?" />
+    <meta propiedad="og:url" contenido="http://127.0.0.1:5500/index.html" />
+    <meta
+      propiedad="og:descripción "
+      content="recetas caseras, cocina hecha en casa, comida facil y rica"
+    />
+    <meta propiedad="og:type" content="blog de recetas" />
+    <meta name="author" content="Treviso Oriana" />
+  </head>
 
-  <link rel="stylesheet" href="../css/index.css" class="rel" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400&display=swap" rel="stylesheet" />
-  <meta propiedad="og:título" contenido="blog personal, recetas de comidas">
-  <meta propiedad="og:nombre_del_sitio" contenido="QUE COMEMOS HOY ?">
-  <meta propiedad="og:url" contenido="http://127.0.0.1:5500/index.html">
-  <meta propiedad="og:descripción " content="recetas caseras, cocina hecha en casa, comida facil y rica">
-  <meta propiedad="og:type" content="blog de recetas">
-  <meta name="author" content="Treviso Oriana" />
-</head>
-
-<body>
-  <div class="container">
-    <header class="containerHeader mainSectionSpace">
-      <div class="headerTop flexSeparateItems">
-        <div class="headerLogo">
-          <img src="../assets/logo.png" alt="" class="src" width="100px " height="100px ">
+  <body>
+    <div class="container">
+      <header class="containerHeader mainSectionSpace">
+        <div class="headerTop flexSeparateItems">
+          <div class="headerLogo">
+            <img
+              src="../assets/logo.png"
+              alt=""
+              class="src"
+              width="100px "
+              height="100px "
+            />
+          </div>
+          <div class="headerNavbar">
+            <nav class="menu">
+              <ul class="flexSeparateItems">
+                <li><a href="../index.html"> Home </a></li>
+                <li><a href="../pages/blog.html"> Blog </a></li>
+                <li><a href="../pages/noticias.html"> Noticias </a></li>
+                <li><a href="../pages/recetas.html">Recetas</a></li>
+                <li class="activeItem">Subi tu Receta</li>
+              </ul>
+            </nav>
+          </div>
+          <div class="headerBottom">
+            <form class="searchNav" role="search">
+              <button class="button-search" type="submit">Buscador</button>
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder=""
+                aria-label=""
+              />
+            </form>
+          </div>
         </div>
-        <div class="headerNavbar">
-          <nav class="menu">
-            <ul class="flexSeparateItems">
-              <li><a href="../index.html"> Home </a></li>
-              <li><a href="../pages/blog.html"> Blog </a></li>
-              <li><a href="../pages/noticias.html"> Noticias </a></li>
-              <li><a href="../pages/recetas.html">Recetas</a></li>
-              <li class="activeItem">Subi tu Receta </li>
-            </ul>
-          </nav>
+      </header>
+
+      <main class="containerContent">
+        <h1>Subi Tu Receta</h1>
+        <div class="contentFormRecipe">
+          <div class="imgReceta">
+            <img src="../assets/comidaSubiTuReceta.jpg" alt="" class="src" />
+          </div>
+
+          <div class="subiTuReceta">
+            <form action="contactForm">
+              <div class="inputWrapper">
+                <label for="nombre">Correo-email</label>
+                <input
+                  type="inputNombre"
+                  name="nombre"
+                  id="nombre"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+
+              <div class="inputWrapper">
+                <label for="correo">Nombre de tu receta</label>
+                <input
+                  type="email"
+                  name="correo"
+                  id="correo"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+
+              <div class="inputWrapper">
+                <label for="Subi tu receta paso a paso">Paso a paso</label>
+                <input
+                  type="text"
+                  name="pais"
+                  id="pais"
+                  autocomplete="country"
+                  required
+                />
+              </div>
+
+              <div class="inputWrapper">
+                <label for="fotos">Subi tus fotos</label>
+                <input
+                  type="text"
+                  name="cp"
+                  id="cp"
+                  autocomplete="postal-code"
+                  required
+                />
+              </div>
+
+              <button class="button-submit" type="submit">Enviar</button>
+            </form>
+          </div>
         </div>
-        <div class="headerBottom">
-          <form class="searchNav" role="search">
-            <button class="buttonNavbar" type="submit">Buscador</button>
-            <input class="form-control me-2" type="search" placeholder="" aria-label="">
-          </form>
-        </div>
-      </div>
-    </header>
-    <main class="containerContent">
-      <div class="contentFormRecipe">
-        <div class="imgReceta">
-          <img src="../assets/comidaSubiTuReceta.jpg" alt="" class="src" />
-        </div>
-        <form class="subiTuReceta">
-          <h1>Subi Tu Receta</h1>
-          <form action="contactForm">
-            <label for="nombre">Correo-email</label>
-            <input type="inputNombre" name="nombre" id="nombre" autocomplete="name" required>
+      </main>
 
-            <label for="correo">Nombre de tu receta</label>
-            <input type="email" name="correo" id="correo" autocomplete="email" required>
-
-            <label for="Subi tu receta paso a paso">Paso a paso</label>
-            <input type="text" name="pais" id="pais" autocomplete="country" required>
-
-            <label for="fotos">Subi tus fotos</label>
-            <input type="text" name="cp" id="cp" autocomplete="postal-code" required>
-
-            <input type="submit">
-          </form>
-        </form>
-      </div>
-    </main>
-    <footer class="containerFooter mainSectionSpace">
-      <section class="socialMedia flexSeparateItems">
-        <a href=""><img src="../assets/instagram.png" alt="" /></a>
-        <a href=""><img src="../assets/facebook.png" alt="" /></a>
-        <a href=""><img src="../assets/gorjeo.png" alt="" /></a>
-        <a href=""><img src="../assets/whatsapp.png" alt="" /></a>
-      </section>
-    </footer>
-  </div>
-</body>
-
+      <footer class="containerFooter mainSectionSpace">
+        <section class="socialMedia flexSeparateItems">
+          <a href=""><img src="../assets/instagram.png" alt="" /></a>
+          <a href=""><img src="../assets/facebook.png" alt="" /></a>
+          <a href=""><img src="../assets/gorjeo.png" alt="" /></a>
+          <a href=""><img src="../assets/whatsapp.png" alt="" /></a>
+        </section>
+      </footer>
+    </div>
+  </body>
 </html>

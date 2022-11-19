@@ -1,83 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>blog</title>
+    <link rel="stylesheet" href="../css/index.css" class="real" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400&display=swap"
+      rel="stylesheet"
+    />
+    <meta propiedad="og:título" contenido="blog personal, recetas de comidas" />
+    <meta propiedad="og:nombre_del_sitio" contenido="QUE COMEMOS HOY ?" />
+    <meta propiedad="og:url" contenido="http://127.0.0.1:5500/index.html" />
+    <meta
+      propiedad="og:descripción "
+      content="recetas caseras, cocina hecha en casa, comida facil y rica"
+    />
+    <meta propiedad="og:type" content="blog de recetas" />
+    <meta name="author" content="Treviso Oriana" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=, initial-scale=1.0" />
-  <title>blog</title>
-  <link rel="stylesheet" href="../css/index.css" class="real" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400&display=swap" rel="stylesheet" />
-  <meta propiedad="og:título" contenido="blog personal, recetas de comidas">
-  <meta propiedad="og:nombre_del_sitio" contenido="QUE COMEMOS HOY ?">
-  <meta propiedad="og:url" contenido="http://127.0.0.1:5500/index.html">
-  <meta propiedad="og:descripción " content="recetas caseras, cocina hecha en casa, comida facil y rica">
-  <meta propiedad="og:type" content="blog de recetas">
-  <meta name="author" content="Treviso Oriana" />
-
-</head>
-
-<body>
-  <div class="container">
-    <header class="containerHeader mainSectionSpace">
-      <div class="headerTop flexSeparateItems">
-        <div class="headerLogo">
-          <img src="../assets/logo.png" alt="" class="src" width="100px " height="100px ">
+  <body>
+    <div class="container">
+      <header class="containerHeader mainSectionSpace">
+        <div class="headerTop flexSeparateItems">
+          <div class="headerLogo">
+            <img
+              src="../assets/logo.png"
+              alt=""
+              class="src"
+              width="100px "
+              height="100px "
+            />
+          </div>
+          <div class="headerNavbar">
+            <nav class="menu">
+              <ul class="flexSeparateItems">
+                <li><a href="../index.html"> Home </a></li>
+                <li class="activeItem">Blog</li>
+                <li><a href="../pages/noticias.html"> Noticias </a></li>
+                <li><a href="../pages/recetas.html"> Recetas </a></li>
+                <li><a href="../pages/subiTuReceta.html">Subi tu Receta</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="headerBottom">
+            <form class="searchNav" role="search">
+              <button class="button-search" type="submit">Buscador</button>
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder=""
+                aria-label=""
+              />
+            </form>
+          </div>
         </div>
-        <div class="headerNavbar">
-          <nav class="menu">
-            <ul class="flexSeparateItems">
-              <li><a href="../index.html"> Home </a></li>
-              <li class="activeItem"> Blog</li>
-              <li><a href="../pages/noticias.html"> Noticias </a></li>
-              <li><a href="../pages/recetas.html"> Recetas </a></li>
-              <li><a href="../pages/subiTuReceta.html">Subi tu Receta</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="headerBottom">
-          <form class="searchNav" role="search">
-            <button class="buttonNavbar" type="submit">Buscador</button>
-            <input class="form-control me-2" type="search" placeholder="" aria-label="">
-          </form>
-        </div>
-      </div>
-    </header>
-    <main class="containerContent">
-      <div class="blog">
-        <p class="blogParrafo">
-          Hola soy Oriana!!!!, mama de 3, trabajo y aveces ya no se que
-          cocinar!!!escucho todas las noches la misma pregunta..."maaaa que
-          vamos a comer???". Asi se me ocurrio iniciar esta pagina para que
-          todos podamos ayudarnos tengo 38 años,soy mama de Martina (17 años)
-          ,Francisco(13 años)y Milo (6 meses), en casa tenemos un menu
-          vegetariano, uno con intolerancia al TAC y seguimos contando!!Cada
-          dia al volver del trabajo se me aparecia la misma pregunta; Que hago
-          de comer hoy por dios? Entonces cuando inicie mi curso de diseño Web
-          decidi crear esta pagina,ahora que esta creada..nos ayudamos entre
-          todos??
-          La idea es simple...cada vez que pensemos en que comer o que creamos que una receta puede ayudar a otro, la
-          publicamos, subimos fotos y el paso a paso, en la seccion Subi Tu receta encontraras todos los pasos para
-          poder hacerlo.Dale!!! animate !! esperamos tu receta.
+      </header>
 
-        </p>
-        <div class="blogImage">
-          <img src="../assets/blogImg.webp" alt="" class="src" />
+      <main class="containerContent">
+        <h1>Blog</h1>
+        <div class="blog">
+          <div class="blogImage">
+            <img src="../assets/blogImg.webp" alt="" class="src" />
+          </div>
+          <div class="blogParrafo">
+            <p>
+              Hola soy Oriana!!!!, mama de 3, trabajo y aveces ya no se que
+              cocinar!!!escucho todas las noches la misma pregunta..."maaaa que
+              vamos a comer???". Asi se me ocurrio iniciar esta pagina para que
+              todos podamos ayudarnos tengo 38 años,soy mama de Martina (17
+              años) ,Francisco(13 años)y Milo (6 meses), en casa tenemos un menu
+              vegetariano, uno con intolerancia al TAC y seguimos contando!!Cada
+              dia al volver del trabajo se me aparecia la misma pregunta; Que
+              hago de comer hoy por dios? Entonces cuando inicie mi curso de
+              diseño Web decidi crear esta pagina,ahora que esta creada..nos
+              ayudamos entre todos?? La idea es simple...cada vez que pensemos
+              en que comer o que creamos que una receta puede ayudar a otro, la
+              publicamos, subimos fotos y el paso a paso, en la seccion Subi Tu
+              receta encontraras todos los pasos para poder hacerlo.Dale!!!
+              animate !! esperamos tu receta.
+            </p>
+          </div>
         </div>
-      </div>
-    </main>
-    <footer class="containerFooter mainSectionSpace">
-      <section class="socialMedia flexSeparateItems">
-        <a href=""><img src="../assets/instagram.png" alt="" /></a>
-        <a href=""><img src="../assets/facebook.png" alt="" /></a>
-        <a href=""><img src="../assets/gorjeo.png" alt="" /></a>
-        <a href=""><img src="../assets/whatsapp.png" alt="" /></a>
-      </section>
-    </footer>
-  </div>
-</body>
-
+      </main>
+      <footer class="containerFooter mainSectionSpace">
+        <section class="socialMedia flexSeparateItems">
+          <a href=""><img src="../assets/instagram.png" alt="" /></a>
+          <a href=""><img src="../assets/facebook.png" alt="" /></a>
+          <a href=""><img src="../assets/gorjeo.png" alt="" /></a>
+          <a href=""><img src="../assets/whatsapp.png" alt="" /></a>
+        </section>
+      </footer>
+    </div>
+  </body>
 </html>

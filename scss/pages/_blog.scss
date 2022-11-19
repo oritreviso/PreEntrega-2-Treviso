@@ -2,25 +2,24 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 60px;
-  padding: 30px;
-  padding-top: 60px;
-
-  .blogParrafo {
-    display: flex;
-    justify-content: center;
-    font-size: medium;
-    margin-top: 5px;
-    text-align: justify;
-  }
 
   .blogImage {
-    width: 488px;
-    height: 500px;
-    border: 42px solid $borde-recuadro;
+    display: flex;
+    justify-content: flex-end;
     img {
+      border: 42px solid $borde-recuadro;
       object-fit: cover;
       width: 405px;
       height: 420px;
+    }
+  }
+
+  .blogParrafo {
+    p {
+      width: 405px;
+      font-size: medium;
+      margin-top: 5px;
+      text-align: justify;
     }
   }
 }
