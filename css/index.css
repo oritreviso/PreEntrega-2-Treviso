@@ -40,7 +40,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
-  grid-template-areas: "header" "content" "footer";
+  grid-template-areas: "header" "content" "footer";
   height: 100vh;
   background-image: linear-gradient(to right bottom, #aff1da, #b6f3c8, #c6f2b4, #deef9f, #f9ea8f); }
   .container .containerContent {
