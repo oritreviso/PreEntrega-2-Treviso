@@ -24,10 +24,18 @@
     .noticia-1 {
       @include flexRow;
       margin-bottom: 30px;
+
+      img {
+        height: 100px;
+      }
     }
     .noticia-2 {
       @include flexRow;
       margin-bottom: 30px;
+
+      img {
+        height: 100px;
+      }
     }
   }
 
@@ -37,9 +45,17 @@
     .noticia-3 {
       @include flexRow;
       margin-right: 15px;
+
+      img {
+        height: 100px;
+      }
     }
     .noticia-4 {
       @include flexRow;
+
+      img {
+        height: 100px;
+      }
     }
   }
 
